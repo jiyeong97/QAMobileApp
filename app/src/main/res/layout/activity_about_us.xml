@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView8"
+            android:id="@+id/logoImg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="26dp"
@@ -27,11 +27,11 @@
             app:srcCompat="@drawable/upperedgelogo" />
 
         <ImageView
-            android:id="@+id/imageView9"
+            android:id="@+id/logoTitleImg"
             android:layout_width="210dp"
             android:layout_height="51dp"
             android:layout_marginTop="10dp"
-            app:layout_constraintStart_toEndOf="@+id/imageView8"
+            app:layout_constraintStart_toEndOf="@+id/logoImg"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/upperedgetitle" />
 
@@ -50,7 +50,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+            app:layout_constraintTop_toBottomOf="@+id/logoTitleImg" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ScrollView
@@ -60,7 +60,7 @@
         android:layout_below="@id/TopLayout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TopLayout">
 
@@ -71,7 +71,7 @@
             android:layout_marginTop="0dp">
 
             <ImageView
-                android:id="@+id/imageView18"
+                android:id="@+id/boxImg"
                 android:layout_width="350dp"
                 android:layout_height="247dp"
                 android:layout_marginStart="20dp"
@@ -83,7 +83,7 @@
                 app:srcCompat="@drawable/aboutbox" />
 
             <ImageView
-                android:id="@+id/imageView19"
+                android:id="@+id/goalIconImg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="parent"
@@ -100,8 +100,8 @@
                 android:textColor="@color/darkBlue"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@+id/imageView19"
-                app:layout_constraintTop_toTopOf="@+id/imageView18" />
+                app:layout_constraintStart_toEndOf="@+id/goalIconImg"
+                app:layout_constraintTop_toTopOf="@+id/boxImg" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -112,13 +112,13 @@
                 android:text="To create great experiences for both tenants and owners, resulting in long relationships based on empathy, good communication and trust."
                 android:textAlignment="viewStart"
                 android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="@+id/imageView18"
+                app:layout_constraintEnd_toEndOf="@+id/boxImg"
                 app:layout_constraintHorizontal_bias="0.686"
-                app:layout_constraintStart_toStartOf="@+id/imageView18"
+                app:layout_constraintStart_toStartOf="@+id/boxImg"
                 app:layout_constraintTop_toBottomOf="@+id/title1" />
 
             <ImageView
-                android:id="@+id/imageView23"
+                android:id="@+id/underBoxImg"
                 android:layout_width="342dp"
                 android:layout_height="201dp"
                 android:layout_marginStart="24dp"
@@ -129,22 +129,22 @@
                 app:srcCompat="@drawable/aboutbox3" />
 
             <ImageView
-                android:id="@+id/imageView22"
+                android:id="@+id/largeBoxImg"
                 android:layout_width="473dp"
                 android:layout_height="343dp"
                 android:layout_marginTop="28dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView18"
+                app:layout_constraintTop_toBottomOf="@+id/boxImg"
                 app:srcCompat="@drawable/aboutbox2" />
 
             <ImageView
-                android:id="@+id/imageView21"
+                android:id="@+id/modelIconImg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-10dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView18"
+                app:layout_constraintTop_toBottomOf="@+id/boxImg"
                 app:srcCompat="@drawable/modelicon" />
 
             <TextView
@@ -157,8 +157,8 @@
                 android:textColor="@color/darkBlue"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@+id/imageView21"
-                app:layout_constraintTop_toTopOf="@+id/imageView22" />
+                app:layout_constraintStart_toEndOf="@+id/modelIconImg"
+                app:layout_constraintTop_toTopOf="@+id/largeBoxImg" />
 
             <TextView
                 android:id="@+id/textView8"
@@ -172,6 +172,155 @@
                 app:layout_constraintHorizontal_bias="0.577"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/title2" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="403dp"
+                android:layout_height="247dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="-60dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:srcCompat="@drawable/aboutbox4" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/underBoxImg"
+                app:srcCompat="@drawable/aboutbox" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/underBoxImg"
+                app:srcCompat="@drawable/serviceicon" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Comprehensive Services"
+                android:textColor="@color/darkBlue"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="2sp"
+                android:text="Upper Edge Property Management is a nationally recognized company that offers its clients a full range of services such as:"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintHorizontal_bias="0.635"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="564dp"
+                android:layout_height="572dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                app:srcCompat="@drawable/aboutbox5" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                app:srcCompat="@drawable/resourceicon" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Core Value"
+                android:textColor="@color/darkBlue"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageView6"
+                app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:lineSpacingExtra="2sp"
+                android:text="Upper Edge's core values are evident in everything we do:"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:lineSpacingExtra="2sp"
+                android:text="Brand Personality"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="2sp"
+                android:text="We are a company that is passionate about our customers, our company, and our vision to be leaders in the field of property management. We are visionaries that aren't afraid to use cutting edge technologies to improve our products and service."
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:lineSpacingExtra="2sp"
+                android:text="Brand Promise"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="2sp"
+                android:text="We take pride in serving our clients, both owners and tenants. We give them prompt communication with clear, concise answers to their questions, and look after their property quickly and competently."
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
