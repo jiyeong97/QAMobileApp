@@ -19,7 +19,7 @@
         <ImageView
             android:id="@+id/topBackgroudImg"
             android:layout_width="0dp"
-            android:layout_height="190dp"
+            android:layout_height="198dp"
             android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -65,14 +65,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/logoTitleImg" />
 
-        <Button
+        <ImageButton
             android:id="@+id/naviBtn"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginTop="30dp"
             app:layout_constraintEnd_toEndOf="@+id/topBackgroudImg"
             app:layout_constraintStart_toEndOf="@+id/logoTitleImg"
-            app:layout_constraintTop_toTopOf="@+id/topBackgroudImg" />
+            app:layout_constraintTop_toTopOf="@+id/topBackgroudImg"
+            android:backgroundTint="@color/clear"
+            android:scaleType="centerCrop"
+            android:src="@drawable/threeline"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -449,41 +452,49 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
 
-                <Button
+                <ImageButton
                     android:id="@+id/twitterBtn"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="15dp"
                     android:layout_marginBottom="10dp"
                     app:layout_constraintBottom_toBottomOf="@+id/bottomBackgroundImg"
-                    app:layout_constraintStart_toEndOf="@+id/authorTxt" />
+                    app:layout_constraintStart_toEndOf="@+id/authorTxt"
+                    android:src="@drawable/twittericon"
+                    android:backgroundTint="@color/clear"/>
 
-                <Button
+                <ImageButton
                     android:id="@+id/youtubeBtn"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginBottom="10dp"
                     app:layout_constraintBottom_toBottomOf="@+id/bottomBackgroundImg"
-                    app:layout_constraintStart_toEndOf="@+id/twitterBtn" />
+                    app:layout_constraintStart_toEndOf="@+id/twitterBtn"
+                    android:src="@drawable/youtubeicon"
+                    android:backgroundTint="@color/clear"/>
 
-                <Button
+                <ImageButton
                     android:id="@+id/facebookBtn"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginBottom="10dp"
                     app:layout_constraintBottom_toBottomOf="@+id/bottomBackgroundImg"
-                    app:layout_constraintStart_toEndOf="@+id/youtubeBtn" />
+                    app:layout_constraintStart_toEndOf="@+id/youtubeBtn"
+                    android:src="@drawable/facebookicon"
+                    android:backgroundTint="@color/clear"/>
 
-                <Button
+                <ImageButton
                     android:id="@+id/linkedInBtn"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginBottom="10dp"
                     app:layout_constraintBottom_toBottomOf="@+id/bottomBackgroundImg"
-                    app:layout_constraintStart_toEndOf="@+id/facebookBtn" />
+                    app:layout_constraintStart_toEndOf="@+id/facebookBtn"
+                    android:src="@drawable/linkedinicon"
+                    android:backgroundTint="@color/clear"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
