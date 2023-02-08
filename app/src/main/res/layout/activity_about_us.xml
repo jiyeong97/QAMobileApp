@@ -461,7 +461,8 @@
                     app:layout_constraintBottom_toBottomOf="@+id/bottomBackgroundImg"
                     app:layout_constraintStart_toEndOf="@+id/authorTxt"
                     android:src="@drawable/twittericon"
-                    android:backgroundTint="@color/clear"/>
+                    android:backgroundTint="@color/clear"
+                    android:onClick="goToTwitter"/>
 
                 <ImageButton
                     android:id="@+id/youtubeBtn"
@@ -472,7 +473,8 @@
                     app:layout_constraintBottom_toBottomOf="@+id/bottomBackgroundImg"
                     app:layout_constraintStart_toEndOf="@+id/twitterBtn"
                     android:src="@drawable/youtubeicon"
-                    android:backgroundTint="@color/clear"/>
+                    android:backgroundTint="@color/clear"
+                    android:onClick="goToYoutube"/>
 
                 <ImageButton
                     android:id="@+id/facebookBtn"
@@ -483,7 +485,8 @@
                     app:layout_constraintBottom_toBottomOf="@+id/bottomBackgroundImg"
                     app:layout_constraintStart_toEndOf="@+id/youtubeBtn"
                     android:src="@drawable/facebookicon"
-                    android:backgroundTint="@color/clear"/>
+                    android:backgroundTint="@color/clear"
+                    android:onClick="goToFacebook"/>
 
                 <ImageButton
                     android:id="@+id/linkedInBtn"
@@ -494,7 +497,8 @@
                     app:layout_constraintBottom_toBottomOf="@+id/bottomBackgroundImg"
                     app:layout_constraintStart_toEndOf="@+id/facebookBtn"
                     android:src="@drawable/linkedinicon"
-                    android:backgroundTint="@color/clear"/>
+                    android:backgroundTint="@color/clear"
+                    android:onClick="goToLinkIn"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
