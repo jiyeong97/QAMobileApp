@@ -8,7 +8,7 @@
     android:background="@color/whiteGray">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/TopLayout"
+        android:id="@+id/topLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"
@@ -67,15 +67,15 @@
 
         <ImageButton
             android:id="@+id/naviBtn"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_marginTop="30dp"
-            app:layout_constraintEnd_toEndOf="@+id/topBackgroudImg"
-            app:layout_constraintStart_toEndOf="@+id/logoTitleImg"
-            app:layout_constraintTop_toTopOf="@+id/topBackgroudImg"
             android:backgroundTint="@color/clear"
             android:scaleType="centerCrop"
-            android:src="@drawable/threeline"/>
+            android:src="@drawable/threeline"
+            app:layout_constraintEnd_toEndOf="@+id/topBackgroudImg"
+            app:layout_constraintStart_toEndOf="@+id/logoTitleImg"
+            app:layout_constraintTop_toTopOf="@+id/topBackgroudImg" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -83,12 +83,12 @@
         android:id="@+id/scrollView2"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_below="@id/TopLayout"
+        android:layout_below="@id/topLayout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TopLayout">
+        app:layout_constraintTop_toBottomOf="@+id/topLayout">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"

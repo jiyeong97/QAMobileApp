@@ -12,6 +12,12 @@
         android:theme="@style/Theme.CapstoneProject"
         tools:targetApi="31">
         <activity
+            android:name=".NavigatorE"
+            android:exported="false" />
+        <activity
+            android:name=".NavigatorC"
+            android:exported="true" />
+        <activity
             android:name=".AboutUs"
             android:exported="true" />
         <activity
