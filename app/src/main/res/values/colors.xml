@@ -10,4 +10,13 @@
     <color name="darkBlue">#0B235B</color>
     <color name="whiteGray">#F1F0F1</color>
     <color name="clear">#00000000</color>
+    <color name="_bg__iphone_14___2_ek2_color">#F0F0F1</color>
+    <color name="username_color">#928A8A</color>
+    <color name="rec_color">#1493D8</color>
+    <color name="log_in_color">#FFFFFF</color>
+
+
+    <color name="_bg__iphone_14___3_ek2_color">#F1F0F1</color>
+    <color name="rectangle_10_color">#0B235B</color>
+    <color name="rectangle_11_color">#FFFFFF</color>
 </resources>
