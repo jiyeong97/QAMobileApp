@@ -11,4 +11,17 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="username_string">Username</string>
+    <string name="password_string">Password</string>
+    <string name="log_in_string">LOG IN</string>
+    <string name="already_have_an_account__sign_up_string">Already have an account? SIGN UP</string>
+
+
+    <string name="full_name_string">Full Name</string>
+    <string name="how_many_properties_do_you_manage__string">How many properties do you manage?</string>
+    <string name="email_string">Email</string>
+    <string name="phone_number_string">Phone number</string>
+    <string name="sign_up_string">SIGN UP</string>
+    <string name="you_have_no_accounts__sign_in_string">You have no accounts? SIGN IN</string>
 </resources>
