@@ -99,13 +99,18 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    //This is center layout contains title image, input box and send button.
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topLayout">
+
+        //This is dark blue box image view.
 
         <ImageView
             android:id="@+id/imageView3"
@@ -118,6 +123,24 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/shortbox" />
 
+        //This is title text view inside the dark blue box.
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-2dp"
+            android:layout_marginBottom="10dp"
+            android:text="Ask question through the e-mail"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+        //This is icon image view.
+
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="wrap_content"
@@ -127,6 +150,8 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/qicon" />
 
+        //This is white box contains user input box.
+
         <ImageView
             android:id="@+id/imageView6"
             android:layout_width="wrap_content"
@@ -135,6 +160,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView3"
             app:srcCompat="@drawable/aboutbox2" />
+
+        //This is user input box.
 
         <EditText
             android:id="@+id/editTextTextMultiLine"
@@ -152,6 +179,56 @@
             app:layout_constraintEnd_toEndOf="@+id/imageView6"
             app:layout_constraintStart_toStartOf="@+id/imageView6"
             app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+        //This is sending button.
+
+        <ImageButton
+            android:id="@+id/sendBtn"
+            android:layout_width="223dp"
+            android:layout_height="67dp"
+            android:backgroundTint="@color/clear"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sendbtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    //This is bottom layout contain author.
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        //This is background image view.
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bottom" />
+
+        //This is author text view.
+        <TextView
+            android:id="@+id/authorTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="© 2019 Upper Edge Property Management. All right reserved"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
