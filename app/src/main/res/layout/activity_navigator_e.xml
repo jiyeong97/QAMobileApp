@@ -5,8 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NavigatorC"
-    android:background="@color/whiteGray">
+    android:background="@color/whiteGray"
+    tools:ignore="ExtraText">
 
+    //This is top layout contains logo image and button for previous activity.
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/topLayout"
         android:layout_width="0dp"
@@ -16,6 +18,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        //This is background image view.
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="0dp"
@@ -28,6 +31,7 @@
             app:layout_constraintVertical_bias="0.444"
             app:srcCompat="@drawable/topback" />
 
+        //This is background image view.
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="0dp"
@@ -39,6 +43,7 @@
             app:layout_constraintTop_toBottomOf="@+id/logoImg"
             app:srcCompat="@drawable/topfront" />
 
+        //This is logo image view.
         <ImageView
             android:id="@+id/logoImg"
             android:layout_width="wrap_content"
@@ -49,6 +54,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/upperedgelogo" />
 
+        //This is logo title image view.
         <ImageView
             android:id="@+id/logoTitleImg"
             android:layout_width="210dp"
@@ -59,6 +65,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/upperedgetitle" />
 
+        //This is button for back to previous activity.
         <ImageButton
             android:id="@+id/naviBtn"
             android:layout_width="40dp"
@@ -72,6 +79,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        //This is 'Menu' text view.
         <TextView
             android:id="@+id/MenuTitle"
             android:layout_width="wrap_content"
@@ -91,6 +99,8 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+
+    //This is center layout for navigate buttons.
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout3"
         android:layout_width="0dp"
@@ -101,6 +111,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topLayout">
 
+        //This linear layout contain all the buttons to vertical.
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -108,16 +119,7 @@
             android:layout_marginRight="30dp"
             android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/homeBtn"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginBottom="10dp"
-                android:layout_weight="1"
-                android:backgroundTint="@color/clear"
-                android:scaleType="fitCenter"
-                android:src="@drawable/homebtn" />
-
+            //This button links to FAQ activity.
             <ImageButton
                 android:id="@+id/faqBtn"
                 android:layout_width="match_parent"
@@ -128,6 +130,7 @@
                 android:scaleType="fitCenter"
                 android:src="@drawable/faqbtn" />
 
+            //This button links to Add FAQ acitivity.
             <ImageButton
                 android:id="@+id/askBtn"
                 android:layout_width="match_parent"
@@ -138,6 +141,7 @@
                 android:scaleType="fitCenter"
                 android:src="@drawable/addfaqbtn" />
 
+            //This button links to About Us activity.
             <ImageButton
                 android:id="@+id/aboutUsBtn"
                 android:layout_width="match_parent"
@@ -149,6 +153,7 @@
                 android:src="@drawable/aboutusbtn"
                 android:onClick="goToAboutUsPage"/>
 
+            //This button for sign out and it will link to main acitivity.
             <ImageButton
                 android:id="@+id/signOutBtn"
                 android:layout_width="match_parent"
@@ -161,6 +166,7 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    //This is bottom layout. It contains bottom background and author.
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout4"
         android:layout_width="0dp"
@@ -170,6 +176,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent">
 
+        //This is background image view.
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="0dp"
@@ -181,6 +188,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/bottom" />
 
+        //This is author text view.
         <TextView
             android:id="@+id/authorTxt"
             android:layout_width="wrap_content"
