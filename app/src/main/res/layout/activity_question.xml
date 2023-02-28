@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/whiteGray"
-    tools:context=".AskQuestion"
+    tools:context=".Question"
     tools:ignore="ExtraText">
 
     //Top layout contains logo images and going back to previous button.
