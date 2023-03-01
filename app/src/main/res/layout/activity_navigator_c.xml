@@ -77,7 +77,8 @@
             android:src="@drawable/threeline"
             app:layout_constraintEnd_toStartOf="@+id/logoImg"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="goBackToPreviousPage"/>
 
         //This is 'Menu' title text view.
         <TextView
@@ -139,7 +140,8 @@
                 android:layout_weight="1"
                 android:backgroundTint="@color/clear"
                 android:scaleType="fitCenter"
-                android:src="@drawable/askbtn" />
+                android:src="@drawable/askbtn"
+                android:onClick="goToAskQuestionPage"/>
 
             //This button links to About us activity.
             <ImageButton
