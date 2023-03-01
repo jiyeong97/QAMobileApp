@@ -12,6 +12,70 @@
         android:theme="@style/Theme.CapstoneProject"
         tools:targetApi="31">
         <activity
+            android:name=".faq.RentControlActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".faq.MaintenanceActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".faq.HearingActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".faq.LeaseRenewalActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".faq.WarningLettersActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".faq.RentIssuesActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".faq.RoommateReplacementActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".faq.ApplicationLeasingActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".AboutUs"
             android:exported="true" />
         <activity
@@ -22,7 +86,8 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
