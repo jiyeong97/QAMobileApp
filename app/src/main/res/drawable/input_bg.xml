@@ -4,7 +4,7 @@
     <solid android:color="#00000000"/>
     <corners android:radius="50sp"/>
     <stroke android:width="5dp"
-        android:color="@color/gradient"
+        android:color="@color/white"
         android:angle="0"/>
 
 </shape>
