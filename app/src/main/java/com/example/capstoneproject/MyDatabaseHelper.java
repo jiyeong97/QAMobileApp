@@ -35,31 +35,36 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         String query =
                 "CREATE TABLE " + TABLE_NAME + " (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "+
-                        COLUMN_FULLNAME +" TEXT, "+
-                        COLUMN_USERNAME +" TEXT, "+
-                        COLUMN_EMAIL +" TEXT, "+
-                        COLUMN_PASSWORD +" TEXT, "+
-                        COLUMN_PHONENUMBER+" TEXT, "+ COLUMN_NUMBERPROPERTIES +" TEXT);";
+                COLUMN_FULLNAME +" TEXT, "+
+                COLUMN_USERNAME +" TEXT, "+
+                COLUMN_EMAIL +" TEXT, "+
+                COLUMN_PASSWORD +" TEXT, "+
+                COLUMN_PHONENUMBER+" TEXT, "+ COLUMN_NUMBERPROPERTIES +" TEXT);";
         db.execSQL(query);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // this method is called to check if the table exists already.
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
-        onCreate(db);
+            // this method is called to check if the table exists already.
+            db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
+            onCreate(db);
     }
 
-
+    // this method is use to add new course to our sqlite database.
     public void addUser(int userid, String fullName, String email, String password, String username,String number, String numberOfProperties) {
 
-
+        // on below line we are creating a variable for
+        // our sqlite database and calling writable method
+        // as we are writing data in our database.
         db = this.getWritableDatabase();
 
-
+        // on below line we are creating a
+        // variable for content values.
         ContentValues values = new ContentValues();
 
-
+        // on below line we are passing all values
+        // along with its key and value pair.
+        //values.put(COLUMN_ID);
         values.put(COLUMN_FULLNAME,fullName);
         values.put(COLUMN_USERNAME, username);
         values.put(COLUMN_EMAIL, email);
@@ -67,9 +72,10 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         values.put(COLUMN_PASSWORD, password);
         values.put(COLUMN_NUMBERPROPERTIES, numberOfProperties);
 
-
+        // after adding all values we are passing
+        // content values to our table.
         db.insert(TABLE_NAME, null, values);
-
+       // Toast.makeText(MyDatabaseHelper.this, "InsertedData")
 
     }
 
@@ -88,11 +94,11 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         if(cursor.getCount() > 0){
 
             user = cursor.getString(cursor.getColumnIndexOrThrow("password"));
-
+            //cursor.getColumnIndex("password")
             System.out.println("line 95 "+ user +"\t"+ password);
 
             if(user.equals(password)){
-                // Toast.makeToast(this,"Successfully signed In",Toast.LENGTH_SHORT).show();\
+               // Toast.makeToast(this,"Successfully signed In",Toast.LENGTH_SHORT).show();\
                 System.out.println("line 101 true");
                 return true;
             }
@@ -100,11 +106,14 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
             System.out.println("Cursor get count is 0");
             System.out.println("Cursor get count is 0");
         }
+        
 
+        //String password = cursor.getString(1);
 
-
-
+      //  System.out.println("Get user password and username "+ user);
+        
         return false;
-
+        // Cursor res =  db.rawQuery( "select * from contacts where id="+id+"", null );
+        // return res;
     }
 }
