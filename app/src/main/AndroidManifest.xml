@@ -94,6 +94,9 @@
             android:name=".SignIn"
             android:exported="true" />
         <activity
+            android:name=".AskQuestion"
+            android:exported="true"/>
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.CapstoneProject.NoActionBar">
