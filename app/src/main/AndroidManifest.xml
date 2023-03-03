@@ -12,7 +12,9 @@
         android:theme="@style/Theme.CapstoneProject"
         tools:targetApi="31">
         <activity
-
+            android:name=".Categories"
+            android:exported="false" />
+        <activity
             android:name=".faq.RentControlActivity"
             android:exported="false"
             android:theme="@style/Theme.CapstoneProject.NoActionBar">
@@ -76,16 +78,12 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
-            android:name=".AskQuestion"
-            android:exported="true" />
         <activity
             android:name=".NavigatorE"
             android:exported="true" />
         <activity
             android:name=".NavigatorC"
             android:exported="true" />
-
         <activity
             android:name=".AboutUs"
             android:exported="true" />
