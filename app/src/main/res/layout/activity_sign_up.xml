@@ -1,252 +1,292 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/whiteGray"
-    android:orientation="vertical"
-    tools:context=".SignUp">
+    android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:id="@+id/TopLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <ScrollView
+        android:id="@+id/iphone_14___3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
 
         <RelativeLayout
-            android:layout_width="match_parent"
+            android:id="@+id/content_container"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <ImageView
-                android:id="@+id/topBackgroudImg"
-                android:layout_width="match_parent"
-                android:layout_height="198dp"
-                android:scaleType="centerCrop"
-                app:srcCompat="@drawable/shade" />
-
-            <ImageView
-                android:id="@+id/polygon_3"
-                android:layout_width="127dp"
-                android:layout_height="100dp"
-                android:layout_marginStart="215dp"
-                android:layout_marginTop="15dp"
-                android:src="@drawable/polygon_3" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/logoImg"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="26dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/upperedgelogo" />
-
-                <ImageView
-                    android:id="@+id/logoTitleImg"
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="10dp"
-                    app:layout_constraintStart_toEndOf="@+id/logoImg"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/upperedgetitle" />
-
-            </LinearLayout>
-
-        </RelativeLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
-            android:gravity="center">
-
-            <TextView
-                android:id="@+id/AboutUsTitle"
+            <RelativeLayout
+                android:id="@+id/page_iphone_14___3_ek1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Register Account"
-                android:textAlignment="center"
-                android:textColor="@color/darkBlue"
-                android:textSize="28dp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/logoTitleImg" />
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp">
 
-        </LinearLayout>
+                <View
+                    android:id="@+id/_bg__iphone_14___3_ek2"
+                    android:layout_width="390dp"
+                    android:layout_height="844dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/_bg__iphone_14___3_ek2_shape" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:gravity="center"
-                android:orientation="horizontal">
+                <View
+                    android:id="@+id/rectangle_10"
+                    android:layout_width="643.69dp"
+                    android:layout_height="529.66dp"
+                    android:layout_marginStart="-105dp"
+                    android:layout_marginTop="-417dp"
+                    android:background="@drawable/rectangle_10_shape" />
 
                 <ImageView
+                    android:id="@+id/logo_1"
+                    android:layout_width="60dp"
+                    android:layout_height="53dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="25dp"
+                    android:contentDescription="logo_1"
+                    android:src="@drawable/logo_1" />
+
+                <ImageView
+                    android:id="@+id/upperlogo_1"
+                    android:layout_width="215dp"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="81dp"
+                    android:contentDescription="upperlogo_1"
+                    android:src="@drawable/upperlogo_1" />
+
+                <View
+                    android:id="@+id/rectangle_11"
+                    android:layout_width="320dp"
+                    android:layout_height="66dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="309dp"
+                    android:background="@drawable/rectangle_11_shape" />
+
+
+                <RelativeLayout
+                    android:id="@+id/ph_user_circle_light"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/vector_1" />
+                    android:layout_marginStart="53dp"
+                    android:layout_marginTop="331dp">
+
+                    <ImageView
+                        android:id="@+id/vector"
+                        android:layout_width="29.48dp"
+                        android:layout_height="29.48dp"
+                        android:layout_marginStart="6.68dp"
+                        android:layout_marginTop="0dp"
+                        android:contentDescription="vector"
+                        android:src="@drawable/vector" />
+
+                </RelativeLayout>
 
                 <EditText
-                    android:id="@+id/Et_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:hint="@string/full_name_string"
+                    android:id="@+id/username"
+                    android:layout_width="190.5dp"
+                    android:layout_height="34.5dp"
+                    android:layout_marginLeft="101dp"
+                    android:layout_marginTop="335dp"
+                    android:fontFamily="Montserrat"
+                    android:text="@string/username_string"
                     android:textColor="@color/username_color"
-                    android:textColorHint="@color/username_color"
                     android:textSize="17sp" />
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/vector_1" />
+                <View
+                    android:id="@+id/rectangle_12"
+                    android:layout_width="320dp"
+                    android:layout_height="66dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="390dp"
+                    android:background="@drawable/rectangle_12_shape" />
 
                 <EditText
-                    android:id="@+id/Et_email"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:hint="@string/email_string"
+                    android:id="@+id/password1"
+                    android:layout_width="190.5dp"
+                    android:layout_height="34.5dp"
+                    android:layout_marginLeft="101dp"
+                    android:layout_marginTop="413dp"
+                    android:fontFamily="Montserrat"
+                    android:text="@string/password_string"
                     android:textColor="@color/username_color"
-                    android:textColorHint="@color/username_color"
                     android:textSize="17sp" />
 
-            </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <ImageView
+                <RelativeLayout
+                    android:id="@+id/ph_user_circle_light_ek1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/vector_1" />
+                    android:layout_marginStart="53dp"
+                    android:layout_marginTop="250dp">
+
+                    <ImageView
+                        android:id="@+id/vector_ek1"
+                        android:layout_width="29.48dp"
+                        android:layout_height="29.48dp"
+                        android:layout_marginStart="6.68dp"
+                        android:layout_marginTop="0dp"
+                        android:contentDescription="vector_ek1"
+                        android:src="@drawable/vector_ek1" />
+
+                </RelativeLayout>
 
                 <EditText
-                    android:id="@+id/Et_mobile"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:hint="@string/phone_number_string"
+                    android:id="@+id/full_name"
+                    android:layout_width="177.5dp"
+                    android:layout_height="34.5dp"
+                    android:layout_marginLeft="96dp"
+                    android:layout_marginTop="255dp"
+                    android:fontFamily="Montserrat"
+                    android:text="@string/full_name_string"
                     android:textColor="@color/username_color"
-                    android:textColorHint="@color/username_color"
                     android:textSize="17sp" />
 
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="30dp"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/vector_ek3" />
+                <View
+                    android:id="@+id/rectangle_14"
+                    android:layout_width="320dp"
+                    android:layout_height="66dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="636dp"
+                    android:background="@drawable/rectangle_14_shape" />
 
                 <EditText
-                    android:id="@+id/Et_password"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:hint="@string/password_string"
+                    android:id="@+id/how_many_properties_do_you_manage_"
+                    android:layout_width="643.5dp"
+                    android:layout_height="64.5dp"
+                    android:layout_marginLeft="103dp"
+                    android:layout_marginTop="647dp"
+                    android:fontFamily="Montserrat"
+                    android:text="@string/how_many_properties_do_you_manage__string"
                     android:textColor="@color/username_color"
-                    android:textColorHint="@color/username_color"
                     android:textSize="17sp" />
 
-            </LinearLayout>
+                <View
+                    android:id="@+id/rectangle_15"
+                    android:layout_width="320dp"
+                    android:layout_height="66dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="472dp"
+                    android:background="@drawable/rectangle_15_shape" />
 
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="190.5dp"
+                    android:layout_height="33.5dp"
+                    android:layout_marginLeft="101dp"
+                    android:layout_marginTop="497dp"
+                    android:fontFamily="Montserrat"
+                    android:text="@string/email_string"
+                    android:textColor="@color/username_color"
+                    android:textSize="17sp" />
 
-        </LinearLayout>
+                <View
+                    android:id="@+id/rectangle_16"
+                    android:layout_width="320dp"
+                    android:layout_height="66dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="553dp"
+                    android:background="@drawable/rectangle_16_shape" />
 
+                <EditText
+                    android:id="@+id/phone_number"
+                    android:layout_width="198.5dp"
+                    android:layout_height="33.5dp"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="575dp"
+                    android:fontFamily="Montserrat"
+                    android:text="@string/phone_number_string"
+                    android:textColor="@color/username_color"
+                    android:textSize="17sp" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical">
-
-            <LinearLayout
-                android:id="@+id/lv_signup"
-                android:layout_width="220dp"
-                android:layout_height="50dp"
-                android:layout_centerInParent="true"
-                android:background="@drawable/rec_shape"
-                android:gravity="center">
+                <View
+                    android:id="@+id/rec"
+                    android:layout_width="220dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="74dp"
+                    android:layout_marginTop="728dp"
+                    android:background="@drawable/rec_shape" />
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/vector_ek2"
+                    android:layout_width="29dp"
+                    android:layout_height="29.03dp"
+                    android:layout_marginStart="236dp"
+                    android:layout_marginTop="744.14dp"
+                    android:contentDescription="vector_ek2"
                     android:src="@drawable/vector_ek2" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15sp"
+                <ImageView
+                    android:id="@+id/polygon_2"
+                    android:layout_width="127dp"
+                    android:layout_height="183dp"
+                    android:layout_marginStart="158dp"
+                    android:layout_marginTop="-96dp"
+                    android:contentDescription="polygon_2"
+                    android:src="@drawable/polygon_2" />
+
+                <ImageView
+                    android:id="@+id/polygon_1"
+                    android:layout_width="127dp"
+                    android:layout_height="183dp"
+                    android:layout_marginStart="230dp"
+                    android:layout_marginTop="-118dp"
+                    android:contentDescription="polygon_1"
+                    android:src="@drawable/polygon_1" />
+
+                <ImageView
+                    android:id="@+id/polygon_3"
+                    android:layout_width="127dp"
+                    android:layout_height="183dp"
+                    android:layout_marginStart="215dp"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="polygon_3"
+                    android:src="@drawable/polygon_3" />
+
+                <Button
+                    android:id="@+id/sign_up"
+                    android:layout_width="227dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="115dp"
+                    android:layout_marginTop="746dp"
+                    android:fontFamily="Montserrat"
+                    android:onClick="register2"
                     android:text="@string/sign_up_string"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
+                    android:textColor="@color/rectangle_11_color"
+                    android:textSize="22sp"
                     android:textStyle="bold" />
 
-            </LinearLayout>
 
+                <RelativeLayout
+                    android:id="@+id/ph_lock_key_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="57dp"
+                    android:layout_marginTop="401dp">
+
+                    <ImageView
+                        android:id="@+id/vector_ek3"
+                        android:layout_width="24.66dp"
+                        android:layout_height="30.85dp"
+                        android:layout_marginStart="4.46dp"
+                        android:layout_marginTop="1.46dp"
+                        android:contentDescription="vector_ek3"
+                        android:src="@drawable/vector_ek3" />
+
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/you_have_no_accounts__sign_in"
+                    android:layout_width="280.5dp"
+                    android:layout_height="31.5dp"
+                    android:layout_marginLeft="62dp"
+                    android:layout_marginTop="797dp"
+                    android:fontFamily="Josefin Sans"
+                    android:text="@string/you_have_no_accounts__sign_in_string"
+                    android:textColor="@color/username_color"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
         </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:gravity="center_vertical">
-
-            <TextView
-                android:id="@+id/tv_login"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="@string/already_have_an_account__sign_in_string"
-                android:textColor="@color/username_color"
-                android:textSize="17sp"
-                android:textStyle="bold" />
-
-        </RelativeLayout>
-
-
-    </LinearLayout>
-
-</LinearLayout>
+    </ScrollView>
+</HorizontalScrollView>
