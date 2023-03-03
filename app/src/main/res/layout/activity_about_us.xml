@@ -5,10 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AboutUs"
-    android:background="@color/whiteGray">
+    android:background="@color/whiteGray"
+    tools:ignore="ExtraText">
 
+    //This is top layout contains logo and button to link navigator activity.
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/TopLayout"
+        android:id="@+id/topLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"
@@ -16,6 +18,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        //This is top background image view.
         <ImageView
             android:id="@+id/topBackgroudImg"
             android:layout_width="0dp"
@@ -28,6 +31,7 @@
             app:layout_constraintVertical_bias="1.0"
             app:srcCompat="@drawable/shade" />
 
+        //This is logo image view.
         <ImageView
             android:id="@+id/logoImg"
             android:layout_width="wrap_content"
@@ -38,6 +42,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/upperedgelogo" />
 
+        //This is logo title image view.
         <ImageView
             android:id="@+id/logoTitleImg"
             android:layout_width="210dp"
@@ -48,6 +53,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/upperedgetitle" />
 
+        //This is 'About Us' text view.
         <TextView
             android:id="@+id/AboutUsTitle"
             android:layout_width="wrap_content"
@@ -65,37 +71,41 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/logoTitleImg" />
 
+        //This button links to navigator activity.
         <ImageButton
             android:id="@+id/naviBtn"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_marginTop="30dp"
-            app:layout_constraintEnd_toEndOf="@+id/topBackgroudImg"
-            app:layout_constraintStart_toEndOf="@+id/logoTitleImg"
-            app:layout_constraintTop_toTopOf="@+id/topBackgroudImg"
             android:backgroundTint="@color/clear"
             android:scaleType="centerCrop"
-            android:src="@drawable/threeline"/>
+            android:src="@drawable/threeline"
+            app:layout_constraintEnd_toEndOf="@+id/topBackgroudImg"
+            app:layout_constraintStart_toEndOf="@+id/logoTitleImg"
+            app:layout_constraintTop_toTopOf="@+id/topBackgroudImg" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    //This scroll view contain all the about us information.
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_below="@id/TopLayout"
+        android:layout_below="@id/topLayout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TopLayout">
+        app:layout_constraintTop_toBottomOf="@+id/topLayout">
 
+        //This layout is contain all the about us information.
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="0dp">
 
+            //This is white box image view for contain our mission text views.
             <ImageView
                 android:id="@+id/boxImg"
                 android:layout_width="350dp"
@@ -108,6 +118,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/aboutbox" />
 
+            //This is our mission's icon image view.
             <ImageView
                 android:id="@+id/goalIconImg"
                 android:layout_width="wrap_content"
@@ -116,6 +127,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/goalicon" />
 
+            //This is 'Our Mission' title text view.
             <TextView
                 android:id="@+id/title1"
                 android:layout_width="160dp"
@@ -129,6 +141,7 @@
                 app:layout_constraintStart_toEndOf="@+id/goalIconImg"
                 app:layout_constraintTop_toTopOf="@+id/boxImg" />
 
+            //This is all the information of our mission text view.
             <TextView
                 android:id="@+id/content1"
                 android:layout_width="265dp"
@@ -143,6 +156,7 @@
                 app:layout_constraintStart_toStartOf="@+id/boxImg"
                 app:layout_constraintTop_toBottomOf="@+id/title1" />
 
+            //This is dark blue box image view for Inovation model text views.
             <ImageView
                 android:id="@+id/underBoxImg"
                 android:layout_width="342dp"
@@ -154,6 +168,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/content2"
                 app:srcCompat="@drawable/aboutbox3" />
 
+            //This is white box image view for Inovation model text views.
             <ImageView
                 android:id="@+id/largeBoxImg"
                 android:layout_width="473dp"
@@ -164,6 +179,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/boxImg"
                 app:srcCompat="@drawable/aboutbox2" />
 
+            //This is Inovation Model Icon image view.
             <ImageView
                 android:id="@+id/modelIconImg"
                 android:layout_width="wrap_content"
@@ -173,6 +189,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/boxImg"
                 app:srcCompat="@drawable/modelicon" />
 
+            //This is 'Inovation Model' title text view.
             <TextView
                 android:id="@+id/title2"
                 android:layout_width="wrap_content"
@@ -186,6 +203,7 @@
                 app:layout_constraintStart_toEndOf="@+id/modelIconImg"
                 app:layout_constraintTop_toTopOf="@+id/largeBoxImg" />
 
+            //This is Inovation Model informations in white box text view.
             <TextView
                 android:id="@+id/content2"
                 android:layout_width="276dp"
@@ -199,6 +217,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/title2" />
 
+            //This is Inovation Model informations in dark blue box text view.
             <TextView
                 android:id="@+id/underContetn1"
                 android:layout_width="276dp"
@@ -212,6 +231,7 @@
                 app:layout_constraintStart_toStartOf="@+id/underBoxImg"
                 app:layout_constraintTop_toBottomOf="@+id/largeBoxImg" />
 
+            //This is dark blue box for Comprehensive Services text views.
             <ImageView
                 android:id="@+id/underBoxImg2"
                 android:layout_width="403dp"
@@ -223,6 +243,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/boxImg2"
                 app:srcCompat="@drawable/aboutbox4" />
 
+            //This is white box for Comprehensive Services text views.
             <ImageView
                 android:id="@+id/boxImg2"
                 android:layout_width="350dp"
@@ -233,6 +254,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/underBoxImg"
                 app:srcCompat="@drawable/aboutbox" />
 
+            //This is Comprehensive Services's Icon image view.
             <ImageView
                 android:id="@+id/serviceIconImg"
                 android:layout_width="wrap_content"
@@ -241,6 +263,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/underBoxImg"
                 app:srcCompat="@drawable/serviceicon" />
 
+            //This is 'Comprehensive Services' title text view.
             <TextView
                 android:id="@+id/title3"
                 android:layout_width="wrap_content"
@@ -253,6 +276,7 @@
                 app:layout_constraintStart_toEndOf="@+id/serviceIconImg"
                 app:layout_constraintTop_toTopOf="@+id/boxImg2" />
 
+            //This is Comprehensive Services information in white box text view.
             <TextView
                 android:id="@+id/content3"
                 android:layout_width="276dp"
@@ -268,6 +292,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/title3"
                 app:layout_constraintVertical_bias="0.0" />
 
+            //This is Comprehensive Services information in dark blue box text view.
             <TextView
                 android:id="@+id/underContent2"
                 android:layout_width="276dp"
@@ -281,6 +306,7 @@
                 app:layout_constraintStart_toStartOf="@+id/underBoxImg2"
                 app:layout_constraintTop_toBottomOf="@+id/boxImg2" />
 
+            //This is white box for Core Value information.
             <ImageView
                 android:id="@+id/largeBoxImg2"
                 android:layout_width="564dp"
@@ -291,6 +317,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/underBoxImg2"
                 app:srcCompat="@drawable/aboutbox5" />
 
+            //This is Core Value Icon image view.
             <ImageView
                 android:id="@+id/valueIconImg"
                 android:layout_width="wrap_content"
@@ -299,6 +326,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/underBoxImg2"
                 app:srcCompat="@drawable/resourceicon" />
 
+            //This is 'Core Value' title text view.
             <TextView
                 android:id="@+id/title4"
                 android:layout_width="wrap_content"
@@ -311,6 +339,7 @@
                 app:layout_constraintStart_toEndOf="@+id/valueIconImg"
                 app:layout_constraintTop_toTopOf="@+id/largeBoxImg2" />
 
+            //This is first paragraph in Core value information.
             <TextView
                 android:id="@+id/content4_1"
                 android:layout_width="276dp"
@@ -323,6 +352,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/title4" />
 
+            //This is second paragraph in Core value information.
             <TextView
                 android:id="@+id/content4_2"
                 android:layout_width="276dp"
@@ -337,6 +367,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/content4_1" />
 
+            //This is third paragraph in Core value information.
             <TextView
                 android:id="@+id/content4_3"
                 android:layout_width="276dp"
@@ -349,6 +380,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/content4_2" />
 
+            //This is forth paragraph in Core value information.
             <TextView
                 android:id="@+id/content4_4"
                 android:layout_width="276dp"
@@ -362,6 +394,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/content4_3" />
 
+            //This is fifth paragraph in Core Value information.
             <TextView
                 android:id="@+id/content4_5"
                 android:layout_width="276dp"
@@ -374,6 +407,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/content4_4" />
 
+            //This is bottom layout for the link buttons and text views.
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintLayout2"
                 android:layout_width="match_parent"
@@ -383,6 +417,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/largeBoxImg2">
 
+                //This is bottom background image view.
                 <ImageView
                     android:id="@+id/bottomBackgroundImg"
                     android:layout_width="0dp"
@@ -396,6 +431,7 @@
                     app:layout_constraintVertical_bias="0.0"
                     app:srcCompat="@drawable/bottom" />
 
+                //This is email icon.
                 <ImageView
                     android:id="@+id/emailIconImg"
                     android:layout_width="30dp"
@@ -406,6 +442,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/icons8_mail_48" />
 
+                //This is phone icon.
                 <ImageView
                     android:id="@+id/phoneIconImg"
                     android:layout_width="30dp"
@@ -416,6 +453,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/emailIconImg"
                     app:srcCompat="@drawable/icons8_phone_50" />
 
+                //This is email text view.
                 <TextView
                     android:id="@+id/emailTxt"
                     android:layout_width="wrap_content"
@@ -429,6 +467,7 @@
                     app:layout_constraintStart_toEndOf="@+id/emailIconImg"
                     app:layout_constraintTop_toTopOf="parent" />
 
+                //This is phone text view.
                 <TextView
                     android:id="@+id/phoneTxt"
                     android:layout_width="wrap_content"
@@ -440,6 +479,7 @@
                     app:layout_constraintStart_toEndOf="@+id/phoneIconImg"
                     app:layout_constraintTop_toBottomOf="@+id/emailTxt" />
 
+                //This is author text view.
                 <TextView
                     android:id="@+id/authorTxt"
                     android:layout_width="wrap_content"
@@ -452,6 +492,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
 
+                //This twitter button links to the twitter.
                 <ImageButton
                     android:id="@+id/twitterBtn"
                     android:layout_width="40dp"
@@ -464,6 +505,7 @@
                     android:backgroundTint="@color/clear"
                     android:onClick="goToTwitter"/>
 
+                //This youtube button links to the youtube.
                 <ImageButton
                     android:id="@+id/youtubeBtn"
                     android:layout_width="40dp"
@@ -476,6 +518,7 @@
                     android:backgroundTint="@color/clear"
                     android:onClick="goToYoutube"/>
 
+                //This facebook button links to the facebook.
                 <ImageButton
                     android:id="@+id/facebookBtn"
                     android:layout_width="40dp"
@@ -488,6 +531,7 @@
                     android:backgroundTint="@color/clear"
                     android:onClick="goToFacebook"/>
 
+                //This linkedin button links to the linkedin.
                 <ImageButton
                     android:id="@+id/linkedInBtn"
                     android:layout_width="40dp"
