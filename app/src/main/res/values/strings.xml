@@ -16,6 +16,7 @@
     <string name="password_string">Password</string>
     <string name="log_in_string">LOG IN</string>
     <string name="already_have_an_account__sign_up_string">Already have an account? SIGN UP</string>
+    <string name="already_have_an_account__sign_in_string">Already have an account? LOGIN</string>
 
 
     <string name="full_name_string">Full Name</string>
@@ -23,5 +24,5 @@
     <string name="email_string">Email</string>
     <string name="phone_number_string">Phone number</string>
     <string name="sign_up_string">SIGN UP</string>
-    <string name="you_have_no_accounts__sign_in_string">You have no accounts? SIGN IN</string>
+    <string name="you_have_no_accounts__sign_up_string">You have no accounts? REGISTER</string>
 </resources>

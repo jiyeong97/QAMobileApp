@@ -12,20 +12,18 @@ import android.widget.Toast;
 
 
 
-    
 
 
-
- 
+public class MainActivity {
     public void signup(View view) {
         // build an intent to open another activity page
-        Intent intent = new Intent (this, SignUp.class);
+        Intent intent = new Intent(this, SignUp.class);
         startActivity(intent);
     }
+
     public void login(View view) {
         // build an intent to open another activity page
         Intent intent = new Intent(this, SignIn.class);
         startActivity(intent);
     }
-
-
+}
