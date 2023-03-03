@@ -10,14 +10,20 @@
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">@color/darkBlue</item>
         <!-- Customize your theme here. -->
     </style>
+
+
     <style name="Theme.CapstoneProject.NoActionBar">
-        <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:statusBarColor">@color/darkBlue</item>
     </style>
+    
+   
     <style name="Theme.CapstoneProject.AppBarOverlay"
         parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="Theme.CapstoneProject.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>
