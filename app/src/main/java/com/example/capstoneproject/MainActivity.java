@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
     }
- /*
     public void signup(View view) {
         // build an intent to open another activity page
         Intent intent = new Intent (this, SignUp.class);
@@ -25,5 +24,4 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, SignIn.class);
         startActivity(intent);
     }
-*/
 }

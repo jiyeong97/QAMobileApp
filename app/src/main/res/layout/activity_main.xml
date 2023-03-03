@@ -102,7 +102,7 @@
             android:layout_marginTop="80dp"
             android:layout_marginEnd="260dp"
             android:scaleType="fitXY"
-            android:text="QnA App"
+            android:text="Q&amp;A App"
             android:textColor="#FFFFFF"
             android:textSize="35sp" />
 
