@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteGray"
+    android:orientation="vertical"
+    tools:context=".faq.ApplicationLeasingActivity">
+
+    <LinearLayout
+        android:id="@+id/TopLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/topBackgroudImg"
+                android:layout_width="match_parent"
+                android:layout_height="198dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/shade" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/logoImg"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="26dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/upperedgelogo" />
+
+                <ImageView
+                    android:id="@+id/logoTitleImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toEndOf="@+id/logoImg"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/upperedgetitle" />
+
+                <ImageButton
+                    android:id="@+id/naviBtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@color/clear"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/threeline"
+                    app:layout_constraintEnd_toEndOf="@+id/topBackgroudImg"
+                    app:layout_constraintStart_toEndOf="@+id/logoTitleImg"
+                    app:layout_constraintTop_toTopOf="@+id/topBackgroudImg" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="110dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/faq" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="FAQ"
+                    android:textAlignment="center"
+                    android:textColor="@color/darkBlue"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/AboutUsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Application &amp; Leasing"
+                android:textAlignment="center"
+                android:textColor="@color/darkBlue"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/logoTitleImg" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="0dp">
+
+                        <hakobastvatsatryan.DropdownTextView
+                            android:id="@+id/first_dropdown_text_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:arrow_drawable="@drawable/next"
+                            app:bg_drawable_expanded="@color/white"
+                            app:bg_drawable_regular="@color/darkBlue"
+                            app:content_font="@font/poppins_regular"
+                            app:content_padding="5dp"
+                            app:content_text="Under the Human Rights Act of Canada, it is illegal to deny a tenant on the basis of source of income. Therefore a you  must consider all applicants, but if the applicant on Employment and Income Assistance has poor credit or cannot afford the property, then they can be denied."
+                            app:content_text_color="@color/darkBlue"
+                            app:content_text_size="15sp"
+                            app:link_text_color="@color/black"
+                            app:panel_padding="5dp"
+                            app:title_font="@font/poppins_bold"
+                            app:title_text="Can you rent to someone on Employment and Income Assistance?"
+                            app:title_text_color="@color/white"
+                            app:title_text_color_expanded="@color/black"
+                            app:title_text_size="18sp" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/bottomBackgroundImg"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/bottom" />
+
+            <ImageView
+                android:id="@+id/emailIconImg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="60dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icons8_mail_48" />
+
+            <ImageView
+                android:id="@+id/phoneIconImg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emailIconImg"
+                app:srcCompat="@drawable/icons8_phone_50" />
+
+            <TextView
+                android:id="@+id/emailTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="65dp"
+                android:lineSpacingExtra="0sp"
+                android:text="Email: info@upperedgepm.com"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/emailIconImg"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/phoneTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:text="Ph: 204-415-6200   Toll Free: 1-844-415-6200"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/phoneIconImg"
+                app:layout_constraintTop_toBottomOf="@+id/emailTxt" />
+
+            <TextView
+                android:id="@+id/authorTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="© 2019 Upper Edge Property Management. All right reserved"
+                android:textColor="@color/white"
+                android:textSize="7sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageButton
+                android:id="@+id/twitterBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/clear"
+                android:onClick="goToTwitter"
+                android:src="@drawable/twittericon"
+                app:layout_constraintBottom_toBottomOf="@+id/bottomBackgroundImg"
+                app:layout_constraintStart_toEndOf="@+id/authorTxt" />
+
+            <ImageButton
+                android:id="@+id/youtubeBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/clear"
+                android:onClick="goToYoutube"
+                android:src="@drawable/youtubeicon"
+                app:layout_constraintBottom_toBottomOf="@+id/bottomBackgroundImg"
+                app:layout_constraintStart_toEndOf="@+id/twitterBtn" />
+
+            <ImageButton
+                android:id="@+id/facebookBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/clear"
+                android:onClick="goToFacebook"
+                android:src="@drawable/facebookicon"
+                app:layout_constraintBottom_toBottomOf="@+id/bottomBackgroundImg"
+                app:layout_constraintStart_toEndOf="@+id/youtubeBtn" />
+
+            <ImageButton
+                android:id="@+id/linkedInBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/clear"
+                android:onClick="goToLinkIn"
+                android:src="@drawable/linkedinicon"
+                app:layout_constraintBottom_toBottomOf="@+id/bottomBackgroundImg"
+                app:layout_constraintStart_toEndOf="@+id/facebookBtn" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
