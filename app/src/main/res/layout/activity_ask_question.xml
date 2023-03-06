@@ -162,7 +162,7 @@
 
             //This is user input box.
             <EditText
-                android:id="@+id/editTextTextMultiLine"
+                android:id="@+id/messageInput"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="3dp"
