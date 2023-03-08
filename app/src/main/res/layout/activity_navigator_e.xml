@@ -129,7 +129,8 @@
                 android:layout_weight="1"
                 android:backgroundTint="@color/clear"
                 android:scaleType="fitCenter"
-                android:src="@drawable/faqbtn" />
+                android:src="@drawable/faqbtn"
+                android:onClick="goToFAQPage"/>
 
             //This button links to Add Question activity.
             <ImageButton

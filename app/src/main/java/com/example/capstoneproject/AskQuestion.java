@@ -16,9 +16,13 @@ public class AskQuestion extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ask_question);
 
+        //Assigned edit text box to variable.
         textMessage = findViewById(R.id.messageInput);
 
+        //Assigned send image button to variable.
         ImageButton buttonSend = findViewById(R.id.sendBtn);
+
+        //Put onclick event to send button.
         buttonSend.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 sendMail();
@@ -26,11 +30,12 @@ public class AskQuestion extends AppCompatActivity {
         });
     }
 
+    //This function links user input to e-mail application.
     private void sendMail(){
         String message = textMessage.getText().toString();
 
         Intent intent = new Intent(Intent.ACTION_SEND);
-        intent.putExtra(Intent.EXTRA_EMAIL, "97yunjy@gmail.com");
+        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"97yunjy@gmail.com"});
         intent.putExtra(Intent.EXTRA_TEXT, message);
 
         intent.setType("message/rfc822");

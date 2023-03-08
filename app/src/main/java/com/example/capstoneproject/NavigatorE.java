@@ -20,6 +20,12 @@ public class NavigatorE extends AppCompatActivity {
         startActivity(intent);
     }
 
+    //This function links to FAQ categories activity.
+    public void goToFAQPage(View view){
+        Intent intent = new Intent(this, Categories.class);
+        startActivity(intent);
+    }
+
     //This function close navigator activity.
     public void goBackToPreviousPage(View view){
         finish();
