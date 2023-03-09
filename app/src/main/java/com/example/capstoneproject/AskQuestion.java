@@ -41,4 +41,10 @@ public class AskQuestion extends AppCompatActivity {
         intent.setType("message/rfc822");
         startActivity(Intent.createChooser(intent,"Choose an email client"));
     }
+
+    //This function links to navigator activity.
+    public void goToNavigatorPage(View view){
+        Intent intent = new Intent(this,NavigatorC.class);
+        startActivity(intent);
+    }
 }

@@ -80,22 +80,28 @@
         </activity>
         <activity
             android:name=".NavigatorE"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar"/>
         <activity
             android:name=".NavigatorC"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar"/>
         <activity
             android:name=".AboutUs"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar"/>
         <activity
             android:name=".SignUp"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar"/>
         <activity
             android:name=".SignIn"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar"/>
         <activity
             android:name=".AskQuestion"
-            android:exported="true"/>
+            android:exported="true"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"

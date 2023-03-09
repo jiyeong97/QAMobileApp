@@ -77,7 +77,8 @@
             android:scaleType="centerCrop"
             android:src="@drawable/threeline"
             app:layout_constraintStart_toEndOf="@+id/logoTitleImg"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="goToNavigatorPage"/>
 
         //This is 'Ask Question' text view.
         <TextView
