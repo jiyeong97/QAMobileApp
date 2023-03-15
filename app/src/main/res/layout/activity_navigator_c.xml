@@ -164,9 +164,9 @@
                 android:layout_weight="1"
                 android:backgroundTint="@color/clear"
                 android:scaleType="centerInside"
-                android:src="@drawable/signoutbtn" />
+                android:src="@drawable/signoutbtn"
+                android:onClick="exitDialog"/>
         </LinearLayout>
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     //This is bottom layout contain author.

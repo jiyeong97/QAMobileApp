@@ -2,6 +2,8 @@ package com.example.capstoneproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -29,5 +31,20 @@ public class NavigatorE extends AppCompatActivity {
     //This function close navigator activity.
     public void goBackToPreviousPage(View view){
         finish();
+    }
+
+    public void exitDialog(View view){
+        new AlertDialog.Builder(this)
+                .setIcon(R.drawable.logout)
+                .setTitle("Exit application")
+                .setMessage("Do you want to log out and exit this application?")
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        finish();
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
     }
 }
