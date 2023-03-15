@@ -37,7 +37,7 @@ public class NavigatorE extends AppCompatActivity {
         new AlertDialog.Builder(this)
                 .setIcon(R.drawable.logout)
                 .setTitle("Exit application")
-                .setMessage("Do you want to log out and exit this application?")
+                .setMessage("Do you want to log-out and exit this application?")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
